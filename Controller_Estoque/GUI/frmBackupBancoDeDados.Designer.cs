@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBackupBancoDeDados));
             this.btBackup = new System.Windows.Forms.Button();
             this.btRestaurar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -35,9 +36,10 @@
             // btBackup
             // 
             this.btBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBackup.Location = new System.Drawing.Point(26, 23);
+            this.btBackup.Location = new System.Drawing.Point(20, 19);
+            this.btBackup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btBackup.Name = "btBackup";
-            this.btBackup.Size = new System.Drawing.Size(723, 227);
+            this.btBackup.Size = new System.Drawing.Size(542, 184);
             this.btBackup.TabIndex = 0;
             this.btBackup.Text = "Backup do banco de dados";
             this.btBackup.UseVisualStyleBackColor = true;
@@ -46,9 +48,10 @@
             // btRestaurar
             // 
             this.btRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRestaurar.Location = new System.Drawing.Point(26, 270);
+            this.btRestaurar.Location = new System.Drawing.Point(20, 219);
+            this.btRestaurar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btRestaurar.Name = "btRestaurar";
-            this.btRestaurar.Size = new System.Drawing.Size(723, 222);
+            this.btRestaurar.Size = new System.Drawing.Size(542, 180);
             this.btRestaurar.TabIndex = 3;
             this.btRestaurar.Text = "Restaurar o banco de dados";
             this.btRestaurar.UseVisualStyleBackColor = true;
@@ -56,11 +59,13 @@
             // 
             // frmBackupBancoDeDados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 529);
+            this.ClientSize = new System.Drawing.Size(586, 430);
             this.Controls.Add(this.btRestaurar);
             this.Controls.Add(this.btBackup);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmBackupBancoDeDados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Backup do banco de dados";
