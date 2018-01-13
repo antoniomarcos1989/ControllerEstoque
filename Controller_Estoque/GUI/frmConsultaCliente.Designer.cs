@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCliente));
             this.dgvDados = new System.Windows.Forms.DataGridView();
             this.btLocalizar = new System.Windows.Forms.Button();
             this.txtValor = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             this.dgvDados.AllowUserToDeleteRows = false;
             this.dgvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDados.Location = new System.Drawing.Point(15, 105);
-            this.dgvDados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.ReadOnly = true;
             this.dgvDados.RowTemplate.Height = 24;
@@ -57,7 +58,7 @@
             // btLocalizar
             // 
             this.btLocalizar.Location = new System.Drawing.Point(478, 60);
-            this.btLocalizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btLocalizar.Margin = new System.Windows.Forms.Padding(2);
             this.btLocalizar.Name = "btLocalizar";
             this.btLocalizar.Size = new System.Drawing.Size(96, 26);
             this.btLocalizar.TabIndex = 6;
@@ -68,7 +69,7 @@
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(149, 34);
-            this.txtValor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtValor.Margin = new System.Windows.Forms.Padding(2);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(426, 20);
             this.txtValor.TabIndex = 5;
@@ -88,9 +89,9 @@
             this.groupBox1.Controls.Add(this.rbCPF);
             this.groupBox1.Controls.Add(this.rbNome);
             this.groupBox1.Location = new System.Drawing.Point(15, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(130, 76);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
@@ -100,7 +101,7 @@
             // 
             this.rbCPF.AutoSize = true;
             this.rbCPF.Location = new System.Drawing.Point(12, 46);
-            this.rbCPF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbCPF.Margin = new System.Windows.Forms.Padding(2);
             this.rbCPF.Name = "rbCPF";
             this.rbCPF.Size = new System.Drawing.Size(77, 17);
             this.rbCPF.TabIndex = 1;
@@ -112,7 +113,7 @@
             this.rbNome.AutoSize = true;
             this.rbNome.Checked = true;
             this.rbNome.Location = new System.Drawing.Point(12, 24);
-            this.rbNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbNome.Margin = new System.Windows.Forms.Padding(2);
             this.rbNome.Name = "rbNome";
             this.rbNome.Size = new System.Drawing.Size(53, 17);
             this.rbNome.TabIndex = 0;
@@ -130,7 +131,8 @@
             this.Controls.Add(this.btLocalizar);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmConsultaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de cliente";
